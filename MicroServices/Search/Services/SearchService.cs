@@ -33,6 +33,7 @@ namespace Search.Services
                             productResult.Products.FirstOrDefault(p => p.Id == item.ProductId)?.Name : "Product information is not available";
                     }
                 }
+
                 var result = new
                 {
                     Customer = customersResult.IsSuccess ?
